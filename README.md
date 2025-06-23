@@ -71,3 +71,35 @@ Sets up and maintains the CI/CD pipelines. Manages infrastructure, automates dep
 
 > Each role contributes uniquely to the success of the project. Clear communication and well-defined responsibilities foster collaboration and accelerate progress.
 
+## Technology Stack
+
+This project integrates several modern technologies to create a scalable, maintainable, and secure booking platform. Each technology serves a specific role in the architecture:
+
+### Django
+A high-level Python web framework used to build the backend of the application. Handles routing, business logic, authentication, and ORM-based interactions with the database.
+
+### MySQL
+A relational database management system used to store and manage structured data such as user information, property listings, bookings, and payments.
+
+### GraphQL
+A query language for APIs that allows clients to request exactly the data they need. Enhances flexibility and performance over traditional REST endpoints, especially in complex UIs.
+
+### Docker
+A containerisation platform that packages the application and its dependencies into isolated environments. Ensures consistency across development, testing, and production.
+
+### Git & GitHub
+Used for version control and team collaboration. GitHub hosts the repository, tracks issues, manages pull requests, and supports CI/CD through GitHub Actions.
+
+### GitHub Actions
+A CI/CD tool that automates testing, building, and deployment workflows. Ensures early detection of bugs and consistent delivery pipelines.
+
+### REST (via Django REST Framework)
+Provides standardised HTTP-based APIs for interacting with the application, particularly useful for mobile and third-party integrations.
+
+### HTML/CSS/JavaScript (Planned Frontend)
+Although this phase focuses on backend, the frontend will be powered by standard web technologies or a frontend framework, consuming the APIs built in Django/GraphQL.
+
+---
+
+> This diverse stack reflects industry-standard tooling and encourages modular, maintainable development practices.
+
