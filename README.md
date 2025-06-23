@@ -103,3 +103,70 @@ Although this phase focuses on backend, the frontend will be powered by standard
 
 > This diverse stack reflects industry-standard tooling and encourages modular, maintainable development practices.
 
+## Database Design
+
+The Airbnb Clone project relies on a relational database structure to manage user activity, property listings, transactions, and reviews. Below are the core entities and their relationships:
+
+### Entities and Fields
+
+#### 1. User
+- `id` (Primary Key)
+- `name`
+- `email`
+- `password_hash`
+- `role` (guest or host)
+
+Users can either host properties or make bookings as guests.
+
+#### 2. Property
+- `id` (Primary Key)
+- `host_id` (Foreign Key to User)
+- `title`
+- `description`
+- `location`
+- `price_per_night`
+
+Each property is owned by a user (host). A host can own multiple properties.
+
+#### 3. Booking
+- `id` (Primary Key)
+- `user_id` (Foreign Key to User)
+- `property_id` (Foreign Key to Property)
+- `check_in_date`
+- `check_out_date`
+- `total_price`
+
+A booking connects a guest with a property for a specific date range. Each booking belongs to one user and one property.
+
+#### 4. Review
+- `id` (Primary Key)
+- `user_id` (Foreign Key to User)
+- `property_id` (Foreign Key to Property)
+- `rating` (1–5)
+- `comment`
+
+A user can leave a review for a property after a booking. Each property can have multiple reviews.
+
+#### 5. Payment
+- `id` (Primary Key)
+- `booking_id` (Foreign Key to Booking)
+- `amount`
+- `payment_method`
+- `status` (e.g., pending, completed)
+
+Each payment is tied to a booking and records transaction details.
+
+### Entity Relationships
+
+- A **User** (as host) can own many **Properties**.
+- A **User** (as guest) can make multiple **Bookings**.
+- A **Property** can have many **Bookings** and **Reviews**.
+- A **Booking** is associated with one **User**, one **Property**, and one **Payment**.
+- A **Review** is tied to one **User** and one **Property**.
+- A **Payment** is made per **Booking**.
+
+---
+
+> This structure supports essential features like property listings, reservations, user feedback, and payment processing, and can be extended with availability calendars, messaging, and notifications.
+
+
