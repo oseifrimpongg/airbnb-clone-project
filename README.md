@@ -202,3 +202,28 @@ Automates the building, testing, and deployment of the application using GitHub 
 > These features not only reflect common use cases in booking platforms but also demonstrate the integration of software engineering principles like scalability, modularity, and maintainability.
 
 
+## API Security
+
+Securing the backend APIs is critical to protecting user data, preventing abuse, and maintaining the integrity of the platform. Below are the core security measures implemented in this project:
+
+### 1. Authentication
+Users must log in to access protected endpoints. Authentication is handled via secure tokens (e.g., JWT), ensuring only verified users can interact with the system. This prevents unauthorised access to sensitive features like booking and property management.
+
+### 2. Authorization
+Different users have different permissions — for example, only a host can edit their own property, and only a guest can make a booking. Role-based access control (RBAC) ensures users can only perform actions appropriate to their role.
+
+### 3. Input Validation and Sanitization
+All incoming data is validated and sanitized to prevent SQL injection, XSS (cross-site scripting), and other common web vulnerabilities. This protects the backend and database from malicious payloads.
+
+### 4. Rate Limiting
+Limits the number of requests a user or IP can make in a short period. This helps prevent brute-force attacks, API abuse, and denial-of-service scenarios, especially during authentication or payment processing.
+
+### 5. Secure Payment Data Handling
+While this project may use simulated payment systems, it still ensures that sensitive payment-related information is handled carefully. Payment records are stored securely and follow best practices, even in sandboxed mode.
+
+### 6. HTTPS and Data Encryption (Planned)
+In deployment, HTTPS will be enforced to encrypt all data between the client and server. This prevents man-in-the-middle attacks and secures user sessions.
+
+---
+
+> Security is not optional. It’s a foundational requirement to protect user trust, ensure platform stability, and comply with good engineering and ethical standards.
