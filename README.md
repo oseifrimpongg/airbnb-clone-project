@@ -227,3 +227,22 @@ In deployment, HTTPS will be enforced to encrypt all data between the client and
 ---
 
 > Security is not optional. It’s a foundational requirement to protect user trust, ensure platform stability, and comply with good engineering and ethical standards.
+
+## CI/CD Pipeline
+
+Continuous Integration and Continuous Deployment (CI/CD) are key practices that automate the software development lifecycle. In this project, CI/CD ensures that code changes are continuously tested, built, and deployed without manual intervention, improving both speed and reliability.
+
+### What It Does
+
+- **Continuous Integration (CI):** Every time new code is pushed, automated checks (such as tests, linting, or security scans) run to catch errors early.
+- **Continuous Deployment (CD):** Once code passes CI checks, it is automatically built and deployed to the production or staging environment, ensuring users always get the latest version without manual redeploys.
+
+### Tools Used
+
+- **GitHub Actions:** Automates workflows such as testing and deployment every time new code is committed.
+- **Docker:** Packages the application and its dependencies into a container, ensuring consistency across development, staging, and production environments.
+
+---
+
+> Integrating CI/CD not only reduces human error but also enables rapid, stable development — making it possible to deliver updates continuously and confidently.
+
