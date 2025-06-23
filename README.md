@@ -35,3 +35,39 @@ The **Airbnb Clone Project** is a full-stack web application that replicates key
 
 > This repository is the foundation for a real-world clone project as inititated by ALx. Each stage of development will be documented with commits and supporting markdown files for clarity and collaboration.
 
+## Team Roles
+
+In a real-world software engineering environment, collaboration across specialised roles ensures product quality, timely delivery, and scalability. Below are the key roles involved in the Airbnb Clone project:
+
+### Business Analyst
+Gathers and defines business requirements from stakeholders, ensuring that the development team builds features aligned with user and business goals.
+
+### Product Owner
+Owns the product vision and roadmap. Prioritises features based on business value, manages the product backlog, and serves as the liaison between stakeholders and the development team.
+
+### Project Manager
+Oversees the project timeline, resource allocation, and team coordination. Ensures deliverables meet deadlines and communicates progress or blockers to stakeholders.
+
+### UI/UX Designer
+Designs user interfaces and experiences that are intuitive, accessible, and visually appealing. Converts business needs into design mockups, wireframes, and user flows.
+
+### Software Architect
+Defines the high-level structure of the application. Makes key decisions around system design, technology stack, and scalability to ensure technical alignment with business needs.
+
+### Software Developer
+- **Backend Developer:** Implements the core application logic, API endpoints, database interactions, and security protocols.
+- **Frontend Developer:** (if applicable) Builds and integrates user-facing components based on UI/UX designs.
+
+### Quality Assurance (QA) Engineer
+Tests the application manually to catch bugs, verify functionality, and ensure usability across different user scenarios.
+
+### Test Automation Engineer
+Writes automated test scripts to validate system behaviours continuously. Improves test coverage, efficiency, and regression prevention during deployments.
+
+### DevOps Engineer
+Sets up and maintains the CI/CD pipelines. Manages infrastructure, automates deployments, and ensures system stability in production and staging environments.
+
+---
+
+> Each role contributes uniquely to the success of the project. Clear communication and well-defined responsibilities foster collaboration and accelerate progress.
+
