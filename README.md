@@ -169,4 +169,36 @@ Each payment is tied to a booking and records transaction details.
 
 > This structure supports essential features like property listings, reservations, user feedback, and payment processing, and can be extended with availability calendars, messaging, and notifications.
 
+## Feature Breakdown
+
+The Airbnb Clone project is feature-driven, focusing on replicating core functionalities of a real-world booking platform. Below are the key features implemented and planned for the application:
+
+### 1. User Management
+Handles user registration, authentication, and role assignment (guest or host). This feature ensures that only authorised users can access or manage specific resources, forming the backbone of a secure, personalised experience.
+
+### 2. Property Management
+Enables hosts to list, update, and delete properties. Properties include details such as location, pricing, and descriptions. This feature allows the platform to manage listings effectively and gives hosts control over their offerings.
+
+### 3. Booking System
+Allows guests to book properties for specific dates and see availability in real-time. It includes check-in/check-out handling, booking validation, and total price calculation. This ensures a smooth, conflict-free reservation process.
+
+### 4. Review and Rating System
+Enables guests to leave feedback after their stay. Hosts and future guests can view ratings and comments, promoting transparency and trust within the platform.
+
+### 5. Payment Processing
+Handles transaction recording for bookings. Although integration with real payment gateways is optional at this stage, the system captures payment status, method, and amount for each booking, simulating real-world financial flows.
+
+### 6. API Development (REST & GraphQL)
+Exposes core functionality through secure APIs, allowing external services and frontend clients to interact with the platform. GraphQL is used for flexible queries, while REST supports standardised resource access.
+
+### 7. API Security
+Implements best practices such as authentication tokens, rate limiting, and data validation to protect user data and prevent misuse of the system. This is critical for maintaining trust and system integrity.
+
+### 8. CI/CD Pipeline Integration
+Automates the building, testing, and deployment of the application using GitHub Actions and Docker. This ensures code quality and accelerates development through continuous feedback and faster release cycles.
+
+---
+
+> These features not only reflect common use cases in booking platforms but also demonstrate the integration of software engineering principles like scalability, modularity, and maintainability.
+
 
